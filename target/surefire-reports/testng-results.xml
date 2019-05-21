@@ -2,21 +2,25 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="27841" started-at="2019-05-21T10:38:11Z" finished-at="2019-05-21T10:38:38Z">
+  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="27007" started-at="2019-05-21T10:49:54Z" finished-at="2019-05-21T10:50:21Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="27841" started-at="2019-05-21T10:38:11Z" finished-at="2019-05-21T10:38:38Z">
+    <test name="Command line test" duration-ms="27007" started-at="2019-05-21T10:49:54Z" finished-at="2019-05-21T10:50:21Z">
       <class name="Unbxd_EC.Unbxd_EC.AppTest">
-        <test-method status="FAIL" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@7a79be86]" name="testDemo" duration-ms="27813" started-at="2019-05-21T16:08:11Z" finished-at="2019-05-21T16:08:38Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@340f438e]" name="init" is-config="true" duration-ms="32" started-at="2019-05-21T16:19:54Z" finished-at="2019-05-21T16:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@340f438e]" name="testDemo" duration-ms="26988" started-at="2019-05-21T16:19:54Z" finished-at="2019-05-21T16:20:21Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='module-6']/div[@class='mod-rail mod-north']/div (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='module-5']/div[@class='mod-rail mod-north']/div (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='module-6']/div[@class='mod-rail mod-north']/div (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='module-5']/div[@class='mod-rail mod-north']/div (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Unbxd_EC.Unbxd_EC.AppTest.testDemo(AppTest.java:184)
+	at Unbxd_EC.Unbxd_EC.AppTest.testDemo(AppTest.java:174)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,7 +55,7 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='module-6']/div[@class='mod-rail mod-north']/div"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='module-5']/div[@class='mod-rail mod-north']/div"}
   (Session info: chrome=74.0.3729.157)
   (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -59,9 +63,9 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Navjots-MacBook-Pro.local', ip: 'fe80:0:0:0:1c2c:93cf:2158:11db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/nq/xbwwy73s3z1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58832}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 628bd569c3987c1a6458eb9e061d3b59
-*** Element info: {Using=xpath, value=//div[@id='module-6']/div[@class='mod-rail mod-north']/div}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/nq/xbwwy73s3z1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 49d41124f4e721b6d3ea54218aafc4cf
+*** Element info: {Using=xpath, value=//div[@id='module-5']/div[@class='mod-rail mod-north']/div}
 	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)

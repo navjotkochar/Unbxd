@@ -8,6 +8,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,12 +21,14 @@ import org.testng.annotations.Test;
  */
 public class AppTest 
 {
-	/*@BeforeSuite
+	@BeforeSuite
 	public void init()
 	{
-		Locators my_locators= new Locators();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
 	}
-	 */
+		
+	 
 	public static WebElement locateListItem(WebDriver driver, String titleText) {
 		List<WebElement> lis = driver.findElements(By.xpath("//ul[@class='module-group']/li"));
 		WebElement listItem = lis.get(0);
@@ -47,7 +50,7 @@ public class AppTest
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
 		System.out.println("---------------");
-		driver.manage().window().setSize(new Dimension(1200,600));
+		driver.manage().window().setSize(new Dimension(1280,733));
 		//driver.manage().window().maximize();
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
