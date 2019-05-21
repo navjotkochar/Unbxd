@@ -1,10 +1,16 @@
 package Unbxd_EC.Unbxd_EC;
 
+
+import java.io.File;
+import java.sql.Timestamp;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.interactions.Actions;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,8 +18,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
 /**
@@ -21,14 +26,17 @@ import org.testng.annotations.Test;
  */
 public class AppTest 
 {
-	/*@BeforeSuite
-	public void init()
-	{
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-	}*/
+	public void takeScreenshot(WebDriver driver){
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try{
+			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+			FileUtils.copyFile(screenshot, new File("screenshot" + timestamp.toString() +".png"));
+		}catch(Exception e){
+			System.out.println("Cannot take screenshot");
+		}
+	}
 		
-	 
+  
 	public static WebElement locateListItem(WebDriver driver, String titleText) {
 		List<WebElement> lis = driver.findElements(By.xpath("//ul[@class='module-group']/li"));
 		WebElement listItem = lis.get(0);
@@ -190,6 +198,9 @@ public class AppTest
 				.until(ExpectedConditions.elementToBeClickable(By.xpath(my_locators.DIV_XPATH_EXIT3_NORTH_CONN)));
 		builder = new Actions(driver);
 		builder.dragAndDrop(email_east, exit3_north).build().perform();
+
+        // Take ss
+		takeScreenshot( driver);
 
 		System.out.println("Done!");
 
