@@ -47,8 +47,8 @@ public class AppTest
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
 		System.out.println("---------------");
-		driver.manage().window().setSize(new Dimension(1044,784));
-		driver.manage().window().maximize();
+		driver.manage().window().setSize(new Dimension(1200,600));
+		//driver.manage().window().maximize();
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
 		driver.findElement(By.id(my_locators.BTN_ID_CREATE_APP)).click();
