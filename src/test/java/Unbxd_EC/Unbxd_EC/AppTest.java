@@ -45,6 +45,7 @@ public class AppTest
 		driver.manage().window().maximize();
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
+		driver.manage().window().maximize();
 		System.out.println("---------------");
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
