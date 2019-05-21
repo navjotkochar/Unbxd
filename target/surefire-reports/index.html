@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest">
-              <span class="suite-name border-failed">Unbxd_EC.Unbxd_EC.AppTest</span>
+              <span class="suite-name border-passed">Unbxd_EC.Unbxd_EC.AppTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" class="hide-methods failed suite-Unbxd_EC.Unbxd_EC.AppTest"> (hide)</a> <!-- hide-methods failed suite-Unbxd_EC.Unbxd_EC.AppTest -->
-                      <a href="#" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" class="show-methods failed suite-Unbxd_EC.Unbxd_EC.AppTest"> (show)</a> <!-- show-methods failed suite-Unbxd_EC.Unbxd_EC.AppTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" class="hide-methods passed suite-Unbxd_EC.Unbxd_EC.AppTest"> (hide)</a> <!-- hide-methods passed suite-Unbxd_EC.Unbxd_EC.AppTest -->
+                      <a href="#" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" class="show-methods passed suite-Unbxd_EC.Unbxd_EC.AppTest"> (show)</a> <!-- show-methods passed suite-Unbxd_EC.Unbxd_EC.AppTest -->
                     </span>
-                    <div class="method-list-content failed suite-Unbxd_EC.Unbxd_EC.AppTest">
+                    <div class="method-list-content passed suite-Unbxd_EC.Unbxd_EC.AppTest">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" title="Unbxd_EC.Unbxd_EC.AppTest" hash-for-method="testDemo">testDemo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Unbxd_EC.Unbxd_EC.AppTest -->
+                    </div> <!-- method-list-content passed suite-Unbxd_EC.Unbxd_EC.AppTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Unbxd_EC.Unbxd_EC.AppTest" class="panel Unbxd_EC.Unbxd_EC.AppTest">
-          <div class="suite-Unbxd_EC.Unbxd_EC.AppTest-class-failed">
+          <div class="suite-Unbxd_EC.Unbxd_EC.AppTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">Unbxd_EC.Unbxd_EC.AppTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,45 +128,10 @@
                   <a name="testDemo">
                   </a> <!-- testDemo -->
                   <span class="method-name">testDemo</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id=&apos;module-5&apos;]/div[@class=&apos;mod-rail mod-north&apos;]/div (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Unbxd_EC.Unbxd_EC.AppTest.testDemo(AppTest.java:174)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;module-5&apos;]/div[@class=&apos;mod-rail mod-north&apos;]/div&quot;}
-  (Session info: chrome=74.0.3729.157)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Navjots-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1c2c:93cf:2158:11db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/nq/xbwwy73s3z1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 49d41124f4e721b6d3ea54218aafc4cf
-*** Element info: {Using=xpath, value=//div[@id=&apos;module-5&apos;]/div[@class=&apos;mod-rail mod-north&apos;]/div}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 35 more
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Unbxd_EC.Unbxd_EC.AppTest-class-failed -->
+          </div> <!-- suite-Unbxd_EC.Unbxd_EC.AppTest-class-passed -->
         </div> <!-- panel Unbxd_EC.Unbxd_EC.AppTest -->
         <div panel-name="test-xml-Unbxd_EC.Unbxd_EC.AppTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -222,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testDemo')
 data.setCell(0, 2, 'Unbxd_EC.Unbxd_EC.AppTest')
-data.setCell(0, 3, 26988);
+data.setCell(0, 3, 17340);
 window.suiteTableData['Unbxd_EC.Unbxd_EC.AppTest']= { tableData: data, tableDiv: 'times-div-Unbxd_EC.Unbxd_EC.AppTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Unbxd_EC.Unbxd_EC.AppTest">
               </div> <!-- times-div-Unbxd_EC.Unbxd_EC.AppTest -->
             </div> <!-- times-div -->
@@ -254,15 +219,9 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Unbxd_EC.Unbxd_EC.AppTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">init</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testDemo</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

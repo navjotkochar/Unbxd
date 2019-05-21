@@ -21,12 +21,12 @@ import org.testng.annotations.Test;
  */
 public class AppTest 
 {
-	@BeforeSuite
+	/*@BeforeSuite
 	public void init()
 	{
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-	}
+	}*/
 		
 	 
 	public static WebElement locateListItem(WebDriver driver, String titleText) {
@@ -45,12 +45,15 @@ public class AppTest
 	public void testDemo()
 	{
 		Locators my_locators = new Locators();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		WebDriver driver = new ChromeDriver(options);
+		driver.manage().window().setSize(new Dimension(1280,1024));
+		//driver.manage().window().maximize();
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
 		System.out.println("---------------");
-		driver.manage().window().setSize(new Dimension(1280,733));
+		//driver.manage().window().setSize(new Dimension(1280,733));
 		//driver.manage().window().maximize();
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
