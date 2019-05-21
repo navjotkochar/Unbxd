@@ -45,15 +45,17 @@ public class AppTest
 		driver.manage().window().maximize();
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
+		System.out.println("---------------");
+		System.out.println(driver.manage().window().getSize());
+		System.out.println("---------------");
 		driver.findElement(By.id(my_locators.BTN_ID_CREATE_APP)).click();
+		
 		// Click on lets get started
 		WebDriverWait wait = new WebDriverWait(driver, 25);
 		WebElement start_button = wait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(my_locators.BTN_XPATH_GET_STARTED)));
-		System.out.println("---------------");
-        System.out.println(start_button.getText());
-        System.out.println("---------------");
-        start_button.click();
+		start_button.click();
+		
 		// Click on New App
 		WebElement newPage = new WebDriverWait(driver, 10)
 				.until(ExpectedConditions.elementToBeClickable(By.id(my_locators.LINK_ID_NEW_PAGE)));
