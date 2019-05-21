@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,6 +48,7 @@ public class AppTest
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("---------------");
+		driver.manage().window().setSize(new Dimension(1280,733));
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
 		driver.findElement(By.id(my_locators.BTN_ID_CREATE_APP)).click();
