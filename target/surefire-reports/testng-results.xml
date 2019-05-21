@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="29100" started-at="2019-05-21T10:03:35Z" finished-at="2019-05-21T10:04:04Z">
+  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="28119" started-at="2019-05-21T10:11:38Z" finished-at="2019-05-21T10:12:06Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="29100" started-at="2019-05-21T10:03:35Z" finished-at="2019-05-21T10:04:04Z">
+    <test name="Command line test" duration-ms="28119" started-at="2019-05-21T10:11:38Z" finished-at="2019-05-21T10:12:06Z">
       <class name="Unbxd_EC.Unbxd_EC.AppTest">
-        <test-method status="FAIL" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@7a79be86]" name="testDemo" duration-ms="29076" started-at="2019-05-21T15:33:35Z" finished-at="2019-05-21T15:34:04Z">
+        <test-method status="FAIL" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@7a79be86]" name="testDemo" duration-ms="28097" started-at="2019-05-21T15:41:38Z" finished-at="2019-05-21T15:42:06Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@id='module-6']/div[@class='mod-rail mod-north']/div (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -59,8 +59,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Navjots-MacBook-Pro.local', ip: 'fe80:0:0:0:1c2c:93cf:2158:11db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/nq/xbwwy73s3z1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57821}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: 02bedcfc78457bd6092e781a02277b0e
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/nq/xbwwy73s3z1...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58093}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
+Session ID: 2555e5639f429a816a537e39bd84cc33
 *** Element info: {Using=xpath, value=//div[@id='module-6']/div[@class='mod-rail mod-north']/div}
 	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
