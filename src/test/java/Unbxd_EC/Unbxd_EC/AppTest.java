@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 
+
 /**
  * Unit test for simple App.
  */
@@ -36,7 +37,6 @@ public class AppTest
 		}
 	}
 		
-  
 	public static WebElement locateListItem(WebDriver driver, String titleText) {
 		List<WebElement> lis = driver.findElements(By.xpath("//ul[@class='module-group']/li"));
 		WebElement listItem = lis.get(0);
