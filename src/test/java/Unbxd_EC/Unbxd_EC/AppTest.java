@@ -48,7 +48,7 @@ public class AppTest
 		driver.get(url);
 		driver.manage().window().maximize();
 		System.out.println("---------------");
-		driver.manage().window().setSize(new Dimension(1044,784));
+		//driver.manage().window().setSize(new Dimension(1044,784));
 		System.out.println(driver.manage().window().getSize());
 		System.out.println("---------------");
 		driver.findElement(By.id(my_locators.BTN_ID_CREATE_APP)).click();
