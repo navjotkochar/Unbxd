@@ -10,6 +10,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -55,7 +56,19 @@ public class AppTest
 		Locators my_locators = new Locators();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		options.addArguments("--disable-features=VizDisplayCompositor, --disable-gpu, --dns-prefetch-disable");
+		/*
+		 * ptions.addArguments("enable-automation");
+options.addArguments("--headless");
+options.addArguments("--window-size=1920,1080");
+options.addArguments("--no-sandbox");
+options.addArguments("--disable-extensions");
+options.addArguments("--dns-prefetch-disable");
+options.addArguments("--disable-gpu");
+options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+		 */
+		options.addArguments("enable-automation, --disable-features=VizDisplayCompositor,"
+				+ " --disable-gpu, --dns-prefetch-disable, --no-sandbox");
+		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().setSize(new Dimension(1280,1024));
 		//driver.manage().window().maximize();
