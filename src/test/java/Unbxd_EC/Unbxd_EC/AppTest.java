@@ -55,7 +55,7 @@ public class AppTest
 		Locators my_locators = new Locators();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		options.addArguments("--disable-features=VizDisplayCompositor");
+		options.addArguments("--disable-features=VizDisplayCompositor, --disable-gpu, --dns-prefetch-disable");
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().setSize(new Dimension(1280,1024));
 		//driver.manage().window().maximize();
