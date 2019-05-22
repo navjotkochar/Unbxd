@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="15438" started-at="2019-05-22T06:08:10Z" finished-at="2019-05-22T06:08:25Z">
+  <suite name="Unbxd_EC.Unbxd_EC.AppTest" duration-ms="18421" started-at="2019-05-22T06:18:17Z" finished-at="2019-05-22T06:18:36Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="15438" started-at="2019-05-22T06:08:10Z" finished-at="2019-05-22T06:08:25Z">
+    <test name="Command line test" duration-ms="18421" started-at="2019-05-22T06:18:17Z" finished-at="2019-05-22T06:18:36Z">
       <class name="Unbxd_EC.Unbxd_EC.AppTest">
-        <test-method status="PASS" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@b684286]" name="testDemo" duration-ms="15417" started-at="2019-05-22T11:38:10Z" finished-at="2019-05-22T11:38:25Z">
+        <test-method status="PASS" signature="testDemo()[pri:0, instance:Unbxd_EC.Unbxd_EC.AppTest@b684286]" name="testDemo" duration-ms="18396" started-at="2019-05-22T11:48:17Z" finished-at="2019-05-22T11:48:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDemo -->

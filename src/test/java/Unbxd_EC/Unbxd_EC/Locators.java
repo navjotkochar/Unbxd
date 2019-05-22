@@ -2,13 +2,11 @@ package Unbxd_EC.Unbxd_EC;
 
 public class Locators {
 	public static final String BTN_ID_CREATE_APP = "link-create";
-	//public static final String BTN_XPATH_GET_STARTED = "//button[@class='ui-corner-all done ui-button ui-state-default']";
 	public static final String BTN_XPATH_GET_STARTED = "//button[contains(text(),\"Let's get started!\")]";
 	public static final String LINK_ID_NEW_APP = "new-app";
 	public static final String LINK_ID_NEW_PAGE = "add-page";
 	public static final String INPUT_XPATH_NEW_PAGE_NAME = "//form[@class='unsubmittable']/p/input";
 	public static final String BTN_XPATH_CREATE = "//button[contains(text(),'Create')]";
-	//public static final String BTN_XPATH_CREATE = "//div[@class='ui-dialog-buttonpane ui-widget-content ui-helper-clearfix']/button[1]";
 	public static final String LINK_XPATH_MESSAGING = "//a[contains(text(),'Messaging')]";
 	public static final String LINK_XPATH_BASIC = "//a[contains(text(),'Basic')]";
 	public static final String LI_XPATH_SEND_EMAIL = "//li[contains(text(),'Send an Email']";

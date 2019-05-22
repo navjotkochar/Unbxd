@@ -21,11 +21,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
-
-
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
 	public void takeScreenshot(WebDriver driver){
