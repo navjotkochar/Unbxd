@@ -56,29 +56,13 @@ public class AppTest
 		Locators my_locators = new Locators();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		/*
-		 * ptions.addArguments("enable-automation");
-options.addArguments("--headless");
-options.addArguments("--window-size=1920,1080");
-options.addArguments("--no-sandbox");
-options.addArguments("--disable-extensions");
-options.addArguments("--dns-prefetch-disable");
-options.addArguments("--disable-gpu");
-options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-		 */
+		
 		options.addArguments("enable-automation, --disable-features=VizDisplayCompositor,"
 				+ " --disable-gpu, --dns-prefetch-disable, --no-sandbox");
-		options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().setSize(new Dimension(1280,1024));
-		//driver.manage().window().maximize();
 		String url = "http://quickfuseapps.com";
 		driver.get(url);
-		System.out.println("---------------");
-		//driver.manage().window().setSize(new Dimension(1280,733));
-		//driver.manage().window().maximize();
-		System.out.println(driver.manage().window().getSize());
-		System.out.println("---------------");
 		driver.findElement(By.id(my_locators.BTN_ID_CREATE_APP)).click();
 		
 		// Click on lets get started
